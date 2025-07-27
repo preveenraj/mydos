@@ -1,18 +1,17 @@
 "use client";
 
 import { useState } from "react";
-import { motion } from "framer-motion";
-import { Plus, Calendar as CalendarIcon, X } from "lucide-react";
-import { format, addDays } from "date-fns";
-
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Plus } from "lucide-react";
+import { format } from "date-fns";
+import { Calendar as CalendarIcon } from "lucide-react";
 import { Calendar } from "@/components/ui/calendar";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-import { Input } from "@/components/ui/input";
 import { Todo } from "./todo-list";
 
 type AddTodoProps = {
